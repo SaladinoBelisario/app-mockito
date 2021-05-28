@@ -1,6 +1,6 @@
-package org.examples.appmockito.services;
+package org.aguzman.appmockito.ejemplos.services;
 
-import org.example.appmockito.samples.models.Examen;
+import org.aguzman.appmockito.ejemplos.models.Examen;
 
 import java.util.Optional;
 

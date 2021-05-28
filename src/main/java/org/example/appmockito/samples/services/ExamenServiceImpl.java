@@ -1,8 +1,8 @@
-package org.examples.appmockito.services;
+package org.aguzman.appmockito.ejemplos.services;
 
-import org.example.appmockito.samples.models.Examen;
-import org.example.appmockito.samples.repositories.ExamenRepository;
-import org.example.appmockito.samples.repositories.PreguntaRepository;
+import org.aguzman.appmockito.ejemplos.models.Examen;
+import org.aguzman.appmockito.ejemplos.repositories.ExamenRepository;
+import org.aguzman.appmockito.ejemplos.repositories.PreguntaRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -31,6 +31,7 @@ public class ExamenServiceImpl implements ExamenService{
         if (examenOptional.isPresent()) {
             examen = examenOptional.orElseThrow();
             List<String> preguntas = preguntaRepository.findPreguntasPorExamenId(examen.getId());
+            preguntaRepository.findPreguntasPorExamenId(examen.getId());
             examen.setPreguntas(preguntas);
         }
         return examen;

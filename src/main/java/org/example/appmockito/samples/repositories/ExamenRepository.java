@@ -1,6 +1,6 @@
 package org.example.appmockito.samples.repositories;
 
-import org.example.appmockito.samples.models.Examen;
+import org.aguzman.appmockito.ejemplos.models.Examen;
 
 import java.util.List;
 
